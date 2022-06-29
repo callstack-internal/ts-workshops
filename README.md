@@ -22,13 +22,17 @@ or
 > yarn android
 ```
 
-## Overview
+## Features
 
 This example app includes two screens - Home and SignIn. Home is available in two versions - `React.ClassComponent` and `React.FunctionalComponent`, additionally, the class is written in pure JS and the function is written in TypeScript. These two version visualize differences in size, complexity and logic separation between both implementations.
 
 Additionally, there is a simple `SignIn` form implementation with `react-hook-form` added to demonstrate more complex generative typing conventions as well as provide a real life example of a fully typed utility function - `getValidationResults`.
 
+### Extra
+
 To support the above-mentioned examples we implemented a full setup for typescript with multiple aliases to simplify importing. We include a clear folder structure, apiService to handle calling the public IMDB API for data, fallback on test data from JSON and some additional components to make everything feel as complete as possible for a real-life example.
+
+### Theming
 
 Code supports a scaffolding for theming as well as a custom theming hook. There are Light and Dark themes which depends on the device's system settings. In order to force Dark theme, please force dark theme in your device's settings.
 

@@ -30,6 +30,8 @@ Additionally, there is a simple `SignIn` form implementation with `react-hook-fo
 
 To support the above-mentioned examples we implemented a full setup for typescript with multiple aliases to simplify importing. We include a clear folder structure, apiService to handle calling the public IMDB API for data, fallback on test data from JSON and some additional components to make everything feel as complete as possible for a real-life example.
 
+Code supports a scaffolding for theming as well as a custom theming hook. There are Light and Dark themes which depends on the device's system settings. In order to force Dark theme, please force dark theme in your device's settings.
+
 ## Refactoring exercise
 
 You can test yourself by switching to the `exercise/refactoring-a-class` branch and taking a shot at refactoring the `Home.screen.class.js` file into TS and then comparing it to the `main` branch.

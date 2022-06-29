@@ -74,7 +74,7 @@ export const getValidationResults = <Values extends FieldValues>({
         result.isValid = false;
         result.messages[
           key
-        ] = `Value for ${key} doesn't match the format of the field`;
+        ] = `Value for ${key} doesn't match the format of the field [ foo@bar.baz ]`;
         break;
       }
       if (rule === 'validate' && typeof currentRule === 'function') {

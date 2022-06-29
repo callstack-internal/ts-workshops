@@ -15,7 +15,6 @@ import {exampleResultsLogger, getValidationResults} from '@src/utils/examples';
 export type SignInFormFields = {
   email: string;
   password: string;
-  remember_me: boolean;
 };
 interface Props {
   navigation: NavigationProp<AuthStackParams & RootStackParamList>;
@@ -41,6 +40,9 @@ const SignIn = ({navigation}: Props) => {
       config: validationRules,
     });
     exampleResultsLogger<SignInFormFields>(validationResults);
+
+    // console.log('====> messages.email', validationResults.messages.email);
+    // console.log('====> messages.email', validationResults.messages.password);
 
     if (validationResults.isValid) navigation.navigate('Main');
   };

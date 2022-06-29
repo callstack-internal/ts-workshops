@@ -8,7 +8,6 @@ import {Home, HomeClass} from '@screens';
 import {HeaderRightButton, TabBarIcon} from '@components';
 
 type MainTabStackParamList = {
-  Home: undefined;
   HomeClass: undefined;
 };
 
@@ -48,7 +47,6 @@ const MainTabNavigator = () => {
         tabBarActiveTintColor: primary,
         tabBarInactiveTintColor: border,
       })}>
-      <MainTab.Screen name={mainTabScreens.Home} component={Home} />
       <MainTab.Screen name={mainTabScreens.HomeClass} component={HomeClass} />
     </MainTab.Navigator>
   );

@@ -32,4 +32,4 @@ To support the above-mentioned examples we implemented a full setup for typescri
 
 ## Refactoring exercise
 
-You can test yourself by switching to the `@exercise/refactoring-a-class` branch and taking a shot at refactoring the `Home.screen.class.js` file into TS and then comparing it to the `@main` branch.
+You can test yourself by switching to the `exercise/refactoring-a-class` branch and taking a shot at refactoring the `Home.screen.class.js` file into TS and then comparing it to the `main` branch.
